@@ -3,11 +3,12 @@ package dio.santander_dev_week_2024;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@OpenAPIDefinition(servers = { @Server(url = "/", description = "Default Server URL")})
 @SpringBootApplication
-public class SantanderDevWeek2024Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SantanderDevWeek2024Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
